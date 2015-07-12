@@ -23,7 +23,7 @@
 
 #   Line Plot - plot2.png
     plot(hpc$Global_active_power ~ hpc$DateTime, type="l",
-        xlab="", ylab="Global Active Power (kilowatts)")
+        xlab="", ylab="Global Active Power (kilowatts)");
 
     dev.copy(png, file="plot2.png", width=480, height=480);
     dev.off();

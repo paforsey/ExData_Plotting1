@@ -44,7 +44,7 @@
         plot(Global_reactive_power ~ DateTime, type="l",
             ylab="Global Reactive Power", xlab="DateTime")
         
-    } )
+    } );
 
     dev.copy(png, file="plot4.png", width=480, height=480);
     dev.off();

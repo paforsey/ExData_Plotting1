@@ -30,11 +30,11 @@
             ylab="Energy Sub Metering", xlab="")
         lines(Sub_metering_2 ~ DateTime, col='Red')
         lines(Sub_metering_3 ~ DateTime, col='Blue')
-    } )
+    } );
 
     legend("topright", col=c("black", "red", "blue"), lwd=2,
         legend=c("Sub Mtering 1", "Sub Metering 2", "Sub Metering 3"),
-        cex=0.75)
+        cex=0.75);
 
 
     dev.copy(png, file="plot3.png", width=480, height=480);

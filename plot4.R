@@ -22,7 +22,7 @@
 
 
 #   Line Plot - plot4.png
-    par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
+    par(mfrow=c(2,2), mar=c(4, 4, 2, 1), oma=c(0, 0, 2, 0))
     with(hpc, {
         
         plot(Global_active_power ~ DateTime, type="l",
@@ -38,7 +38,8 @@
         lines(Sub_metering_3 ~ DateTime, col='Blue')
         
         legend("topright", col=c("black", "red", "blue"), lwd=2, bty="n",
-            legend=c("Sub Metering 1", "Sub Metering 2", "Sub Metering 3"))
+            legend=c("Sub Metering 1", "Sub Metering 2", "Sub Metering 3"),
+            cex=0.50)
         
         plot(Global_reactive_power ~ DateTime, type="l",
             ylab="Global Reactive Power", xlab="DateTime")
